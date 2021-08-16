@@ -1,0 +1,30 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a
+{
+    color: #0065FC;
+
+}
+a :visited
+{
+    color: black;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*MENU*/
+
+ .menu
+ {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
