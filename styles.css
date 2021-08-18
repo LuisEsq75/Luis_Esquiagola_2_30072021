@@ -1,29 +1,44 @@
-header
+html, body
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family: Raleway;
 }
 
-a
+ul
 {
-    color: #0065FC;
-
-}
-a :visited
-{
-    color: black;
-}
-ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/*MENU*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
- .menu
- {
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+
+.l1, .l3
+{
+    color: #0065FC;
+    text-decoration: none;
+}
+.l2
+{   color: black;
+    text-decoration: none;}
+
+.btop
+{
+    border-top: 1px solid #0065FC;}
+
+li{
+    width: 140px; 
+    height: 99px;  
     display: flex;
     justify-content: space-around;
     align-items: center;
