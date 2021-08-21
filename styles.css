@@ -2,15 +2,50 @@ html, body
 {
     font-family: Raleway;
 }
-
+/* Mise en forme UL standard*/
 ul
 {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-/*  HEADER */
+/* Mise en forme */
 
+.flexCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bordureNone
+ {
+     border: none;
+ }
+
+/* Couleur background */
+
+.backBlue
+{
+    background-color: #0065FC;
+}
+.backSkyblue
+{
+    background-color: #deebff;
+}
+.backGrey
+{
+    background-color: #f2f2f2;
+}
+
+
+/*  HEADER      */
 nav {
     display: flex;
     justify-content: space-between;
@@ -48,5 +83,117 @@ li{
     justify-content: space-around;
     align-items: center;
 }
+
 .logo
 {margin-bottom: 6px;}
+
+/* Champs de recherche */
+
+
+.bordureResearch
+{
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+}
+
+.iconSize
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.search{
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.paddingSearch
+{
+    padding-left: 20px;
+}
+
+.buttonSearch
+{
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/* Filtres */ 
+
+.filtre
+{
+    display: flex;
+    align-items: center;
+}
+
+.margFiltre
+{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.margFiltreTitre
+{
+    margin-right: 20px;
+}
+
+.filtreTextIcons
+{
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.filtreTextIcons:hover > .filtreText {
+    color: #0065FC;
+}
+
+.filtreTextIcons:hover > .filtreIcons {
+    color: white;
+    background: #0065FC;
+}
+
+.filtreText
+{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.filtreIcons
+{
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+}
+/* INFO */
+
+.info
+{
+    display: flex;
+    align-items: center;
+}
+
+.info i
+{color: #0065FC;}
+
+.parentIcon
+{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+}

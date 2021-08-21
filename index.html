@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/ecfa71935b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Reservia</title>
 </head>
@@ -19,33 +19,48 @@
         </nav>
     </header>
     
-   <div class="introduction">
-       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
     <!--Champs de recherche-->
-   <div class="search">
-       <i></i>
-       <form>
-           <input name="research">
-           <input type="button">
-        </form>
-   </div>
-    <!--Filtres a selectionner-->
-   <div class="filtres">
-        <p>Filtres</p>
-        <i></i>
-        <input type="button">economique
-        <i></i>
-        <input type="button">familiale
-        <i></i>
-        <input type="button">Romantique
-        <i></i>
-        <input type="button">Animau Autorisés
-    </div>
-    <div>
-        <i></i>
-        <p>Plus de 500 logementssont disponible dans cette ville</p>
-    </div>
+    <section>
+        <div >
+                <h1>Trouver votre hébergements pour vos vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+        </div> 
+        <div class="bordureResearch flexCenter">
+            <div class="iconSize flexCenter">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+                <input class="search flexCenter bordureNone paddingSearch" type="search" value="Marseille , France" />
+            </div>
+            <div class="backBlue flexCenter buttonSearch">Rechercher</div>
+        </div>
+        <div class="filtre margFiltre">
+            <div class="margFiltreTitre"><h3>Filtres</h3></div>
+            <div class="flexBetween filtreTextIcons">
+                <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCenter"></i>
+                <div class="filtreText flexCenter">Economique</div>
+            </div>
+            <div class="flexBetween filtreTextIcons">
+                <i class="fas fa-child fa-lg filtreIcons flexCenter"></i>
+                <div class="filtreText flexCenter">Familiale</div>
+            </div>
+            <div class="flexBetween filtreTextIcons">
+                <i class="fas fa-heart fa-lg filtreIcons flexCenter"></i>
+                <div class="filtreText flexCenter">Romantique</div>
+            </div>
+            <div class="flexBetween filtreTextIcons">
+                <i class="fas fa-dog fa-lg filtreIcons flexCenter "></i>
+                <div class="filtreText flexCenter">Animaux autorisés</div>
+            </div>
+        </div>   
+        <div class="info">
+            <div class="parentIcon flexCenter"> 
+                <i class="fas fa-info fa-xs"></i>
+            </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        </div> 
+    </section>
 
     <div>
         <h1>Hébergement à Marseille</h1>
