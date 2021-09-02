@@ -1,4 +1,4 @@
-html, body
+*
 {
     font-family: Raleway;
 }
@@ -11,9 +11,28 @@ ul
 }
 /* Mise en forme */
 
-.flex
+header {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+  
+footer
+{
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+}
+.flexAI
 {
     display: flex;
+    align-items: center;
 }
 .flexCenter
 {
@@ -59,6 +78,15 @@ ul
 }
 
 
+.flexColumnBetweenNoCenter
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+ 
+
 .bordureNone
  {
      border: none;
@@ -74,9 +102,9 @@ ul
 {
     background-color: #deebff;
 }
-.backGray
+.backGrey
 {
-    background-color: lightgray;
+    background-color: #f2f2f2;
 }
 
 /* Couleur police */
@@ -89,10 +117,9 @@ ul
 {
     color: #deebff;
 }
-.colorGray
+.colorGrey
 {
-    color: lightgray
-}
+    color: #f2f2f2}
 
 /* Mise en forme texte */
 
@@ -201,7 +228,7 @@ nav ul li{
 
 .filtreTextIcons
 {
-    border: 2px solid grey;
+    border: 2px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
@@ -282,7 +309,7 @@ nav ul li{
     background-color: white;
     padding: 1%;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px #f2f2f2;
 }
 
 .bloc1
@@ -308,7 +335,7 @@ nav ul li{
     width: 100%;
     height: 120px;
     border-radius: 15px 15px 0 0;
-}
+}   
 
 .imgHeb2
 {
@@ -379,6 +406,7 @@ nav ul li{
     height: auto;
     padding: 1% 0 1% 1%;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
 }
 
 .cubeDetPop
@@ -410,5 +438,129 @@ nav ul li{
     background-position: center;
     width: 35%;
     height: 160px;
-    border-radius: 15px 0 0 15;
+    border-radius: 15px 0 0 15px;
 }
+/* Activities*/
+
+.activities
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.blocActivities
+{
+    width: auto;
+    height: 600px;
+}
+
+.blocActLow
+{
+    width: 25%;
+    height: 600px;
+}
+.cubeActivities
+{
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2; 
+}
+
+.cubeActLow
+{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2; 
+
+}
+
+.heightTitle
+{
+    height: 80px;
+}
+
+.titleAct
+{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    width: 95% ;
+     
+}
+
+.imgAct1
+{
+
+    background-image: url("./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgAct2
+{
+
+    background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+.imgAct3
+{
+
+    background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+.imgAct4
+{
+
+    background-image: url("./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.imgAct5
+{
+
+    background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+.imgAct6
+{
+
+    background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Footer */
+
+.footer
+{
+    height: 350px;
+    margin-top: 80px;
+}
+
+.sizeBlocFoot
+{
+    height: 180px;
+}
+.margBlocFoot
+{ margin-right: 30%;}
