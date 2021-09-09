@@ -29,6 +29,8 @@ footer
         max-width: 1440px;
         margin: auto;
 }
+
+/* Classe Géneral */
 .flexAI
 {
     display: flex;
@@ -127,7 +129,9 @@ footer
 {
     font-weight: bold;
 }
-/*  HEADER */
+    /*  HEADER */
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -141,7 +145,7 @@ nav ul {
     width: 45%;
 }
 
-.l1, .l3
+.l3
 {
     color: #0065FC;
     text-decoration: none;
@@ -152,12 +156,18 @@ nav ul {
 
 .btop
 {
-    border-top: 1px solid #0065FC;}
-
-.bt2
-{
     border-top: 1px solid transparent;}
 
+.btop:hover
+{
+    border-top: 1px solid #0065FC;
+    cursor: pointer;
+}
+
+.btop:hover > a
+{
+    color: #0065FC;
+}
 nav ul li{
     width: 140px; 
     height: 99px;  
@@ -234,11 +244,13 @@ nav ul li{
     margin-right: 20px;
 }
 
-.filtreTextIcons:hover > .filtreText {
+.filtreTextIcons:hover > .filtreText 
+{
     color: #0065FC;
 }
 
-.filtreTextIcons:hover > .filtreIcons {
+.filtreTextIcons:hover > .filtreIcons 
+{
     color: white;
     background: #0065FC;
 }
@@ -310,6 +322,12 @@ nav ul li{
     padding: 1%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.cubeHeb:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .bloc1
@@ -409,6 +427,11 @@ nav ul li{
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
+.cubePop:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .cubeDetPop
 {
     width: 60%;
@@ -450,20 +473,25 @@ nav ul li{
 
 .blocActivities
 {
-    width: auto;
+    width: 100%;
     height: 600px;
 }
-
 .blocActLow
 {
-    width: 25%;
-    height: 600px;
+    width: 20%;
+    height: 562px;
 }
 .cubeActivities
 {
     width: 25%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px #f2f2f2; 
+}
+
+.cubeActivities:hover
+{
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .cubeActLow
@@ -474,9 +502,15 @@ nav ul li{
 
 }
 
+.cubeActLow:hover
+{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 .heightTitle
 {
-    height: 80px;
+    height: 60px;
 }
 
 .titleAct
@@ -526,7 +560,7 @@ nav ul li{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 500px;
     border-radius: 15px 15px 0 0;
 }
 .imgAct5
@@ -536,7 +570,7 @@ nav ul li{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 150px;
+    height: 200px;
     border-radius: 15px 15px 0 0;
 }
 .imgAct6
@@ -546,7 +580,7 @@ nav ul li{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 200px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -555,7 +589,7 @@ nav ul li{
 .footer
 {
     height: 350px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .sizeBlocFoot
@@ -564,3 +598,12 @@ nav ul li{
 }
 .margBlocFoot
 { margin-right: 30%;}
+
+footer a{
+    text-decoration: none;
+    color: black; 
+}
+.margFootLink
+{
+    height: 25px;
+}
