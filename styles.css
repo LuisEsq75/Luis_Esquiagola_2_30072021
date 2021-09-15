@@ -2,13 +2,7 @@
 {
     font-family: Raleway;
 }
-/* Mise en forme UL standard*/
-ul
-{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 /* Mise en forme */
 
 header {
@@ -87,12 +81,6 @@ footer
     flex-direction: column;
 }
 
- 
-
-.bordureNone
- {
-     border: none;
- }
 
 /* Couleur background */
 
@@ -131,51 +119,59 @@ footer
 }
     /*  HEADER */
 
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 45%;
-}
-
-.l3
+.deskTopNone
 {
-    color: #0065FC;
-    text-decoration: none;
+    display: none;
 }
-.l2
-{   color: black;
-    text-decoration: none;}
 
-.btop
+
+
+.sizeLinks
+{
+    width: 100%;
+}
+
+.sizeLink
+{
+    width: 140px; 
+    height: 99px;
+}
+
+.sizeLink12
+{
+    margin-left: 62.5%;
+}
+
+.sizeNav
+{
+    height: auto;
+}
+
+.lsNone
+{text-decoration: none;}
+
+
+.l1
+{   color: black; }
+
+.l2
+{
+    color: #0065FC;}
+
+.borderTop
 {
     border-top: 1px solid transparent;}
 
-.btop:hover
+.borderTop:hover
 {
     border-top: 1px solid #0065FC;
     cursor: pointer;
 }
 
-.btop:hover > a
+.borderTop:hover > a
 {
     color: #0065FC;
 }
-nav ul li{
-    width: 140px; 
-    height: 99px;  
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .logo
 {margin-bottom: 6px;}
 
@@ -188,6 +184,11 @@ nav ul li{
     border-radius: 10px;
     border: 0.5px solid #f2f2f2;
 }
+
+.bordureNone
+ {
+     border: none;
+ }
 
 .iconSize
 {
@@ -330,6 +331,11 @@ nav ul li{
     transform: scale(1.1);
 }
 
+.cubeTextHeb
+{
+    width: 90%;
+}
+
 .bloc1
 {
     margin-bottom: 10px;
@@ -415,7 +421,7 @@ nav ul li{
 
 .blocPop12
 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .cubePop
@@ -607,3 +613,205 @@ footer a{
 {
     height: 25px;
 }
+
+@media screen and (max-width: 1295px) {
+    .sizeLink12{
+    margin-left: 57.5%;
+    }
+    .cubeTextHeb
+    {
+        min-height: 150px;
+    }
+    .sizeHeb
+    {
+        min-height: auto;
+        padding: 20px;
+    }
+    .sizePopular
+    
+        {
+            min-height: auto;
+            padding: 20px;
+        }
+    
+}
+
+@media screen and (max-width: 990px) {
+
+
+    .sizeLink12{
+    margin-left: 35%;
+    }
+
+    .mFW {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filtreTextIcons{
+        margin-bottom: 20px;}
+    
+    #accommodation
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+    } 
+
+    .blocPop
+    {
+        flex: none;
+        width: 90%;
+        margin-left: 0px;
+        padding: 5%;
+    }
+    .blocHeb
+    {
+        flex: none;
+        width: 90%;
+        margin-right: 0px;
+        margin-top: 50px;
+        padding: 5%;    
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .sizeLinks
+    {
+            width: 90%;
+    }
+    .sizeLink12
+    {
+        margin-left: 20%;
+    }
+
+    .blocHeb
+    {
+        height: auto;
+    }
+
+    .bloc1
+    {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .bloc2
+    {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .cubeHeb
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cubeTextHeb
+    {
+        min-height: auto;
+    }
+
+    .blocActivities
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .cubeActivities
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .blocActLow
+    { width: 100%;
+        height: auto;
+    }
+    .cubeActLow
+    {
+        margin-bottom: 50px;
+    }
+
+    .imgAct1,.imgAct2,.imgAct3,.imgAct4,.imgAct5,.imgAct6
+    {
+        height: 200px;
+    }
+    .footer
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    
+    .sizeLien
+
+    {
+        flex-direction: row;
+    }
+
+    .sizeLink12
+    {
+        order: 1;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .sizeLinkM
+    {
+        width: 50%;
+        border-top: none;
+        border-bottom: 5px solid #f2f2f2;
+
+    }
+
+    .sizeLinkM:hover
+    {
+        border-top: 0;
+        border-bottom: 5px solid #0065FC;
+
+    }
+    .sizeLinks
+    {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .mTitleH1
+    {
+        font-size: x-large;
+    }
+    .search
+    {
+        width: 200px;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+
+    }
+    .bordureResearch
+    {
+        width: auto;
+        border:none;
+    }
+    .buttonSearch
+    {
+        width: 50px;
+        border-radius: 15px;
+    }
+
+    .deskTopNone
+    {
+        display: block;
+    }
+
+    .mNone
+    {
+        display: none;
+    }
+    
+}
+    

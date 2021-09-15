@@ -14,19 +14,28 @@
 <body>
     <!-- Barre de Navigation-->
     <header>
-        <nav>
-            <div><img class="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia" width="120" height="50"></div>
-            <ul>    
-              <li class="btop"><a class="l2" href="#accommodation">Hébergements</a></li>
-              <li class="btop"><a class="l2" href="#activities">Activités</a></li>
-              <li class="btop"><a class="l3" href="#"><b>S'inscrire</b></a></li>
-            </ul>
+        <nav class="sizeNav">
+            <div class="sizeLinks flexBetween">
+                <div>
+                    <img class="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia" width="120" height="50">
+                </div>
+                
+                    <div class="sizeLink12 flexCenter">
+                        <li class="sizeLink sizeLinkM flexCenter borderTop">
+                            <a class="l1 lsNone" href="#accommodation">Hébergements</a></li>
+                        <li class="sizeLink sizeLinkM flexCenter borderTop">
+                            <a class="l1 lsNone" href="#activities">Activités</a></li>
+                    </div>    
+                            <li class="sizeLink flexCenter borderTop">       
+                            <a class="l2 lsNone" href="#"><b>S'inscrire</b></a></li>
+                                
+            </div>    
         </nav>
     </header>
     <main>
         <section>
             <div >
-                    <h1>Trouver votre hébergements pour vos vacances de rêve</h1>
+                    <h1 class="mTitleH1">Trouver votre hébergements pour vos vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
             </div> 
             <!--Champs de recherche-->
@@ -37,27 +46,35 @@
                 <div>
                     <input class="search flexCenter bordureNone paddingSearch" type="search" value="Marseille , France" />
                 </div>
-                <div class="backBlue flexCenter buttonSearch">Rechercher</div>
+                <div class="backBlue flexCenter buttonSearch">
+                    <span class="mNone">Rechercher</span>
+                    <span class="deskTopNone"><i class="fas fa-search"></i></span></div>
             </div>
             <!--Filtres Recherche-->
-            <div class="filtre margFiltre">
+            <div class=" mFW filtre margFiltre">
                 <div class="margFiltreTitre"><h3>Filtres</h3></div>
-                <div class="flexBetween filtreTextIcons">
-                    <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCenter"></i>
-                    <div class="filtreText flexCenter">Economique</div>
+
+                <div class="flexAround" >
+                    <div class="flexBetween filtreTextIcons">
+                        <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCenter"></i>
+                        <div class="filtreText flexCenter">Economique</div>
+                    </div>
+                    <div class="flexBetween filtreTextIcons">
+                        <i class="fas fa-child fa-lg filtreIcons flexCenter"></i>
+                        <div class="filtreText flexCenter">Familiale</div>
+                    </div>    
                 </div>
-                <div class="flexBetween filtreTextIcons">
-                    <i class="fas fa-child fa-lg filtreIcons flexCenter"></i>
-                    <div class="filtreText flexCenter">Familiale</div>
-                </div>
-                <div class="flexBetween filtreTextIcons">
-                    <i class="fas fa-heart fa-lg filtreIcons flexCenter"></i>
-                    <div class="filtreText flexCenter">Romantique</div>
-                </div>
-                <div class="flexBetween filtreTextIcons">
-                    <i class="fas fa-dog fa-lg filtreIcons flexCenter "></i>
-                    <div class="filtreText flexCenter">Animaux autorisés</div>
-                </div>
+                <div class="mFW flexAround">
+                    
+                    <div class="flexBetween filtreTextIcons">
+                        <i class="fas fa-heart fa-lg filtreIcons flexCenter"></i>
+                        <div class="filtreText flexCenter">Romantique</div>
+                    </div>
+                    <div class="flexBetween filtreTextIcons">
+                        <i class="fas fa-dog fa-lg filtreIcons flexCenter "></i>
+                        <div class="filtreText flexCenter">Animaux autorisés</div>
+                    </div>
+                </div>    
             </div>   
             <div class="info">
                 <div class="parentIcon flexCenter"> 
@@ -69,7 +86,7 @@
         <!--Hebergement : Partie GAUCHE-->
         <section id ="accommodation" class="flexAround">
             <div class="sizeHeb blocHeb">
-                <h3 class="textBold">Hébergements à Marseille</h3>
+                <h2 class="textBold">Hébergements à Marseille</h2>
                 <div class="bloc1 flexBetween">
                     <div class="cubeHeb flexColumnCenter">
                         <div class="imgHeb1"></div>
@@ -162,12 +179,12 @@
             </div>
             
             <!--Populaire : Partie Droite-->
-            <div class="sizePopular blocPop flexColumnBetweenNoCenter">
+            <div class="sizePopular blocPop flexColumnBetweenNoCenter backGrey">
                 <div class="flexBetween">
-                    <h3 class="textBold">Les plus Populaires</h3>
+                    <h2 class="textBold">Les plus Populaires</h2>
                     <div><i class="fas fa-chart-line fa-lg"></i>  </div>
                 </div>
-                    <div class="flexCenter cubePop">
+                    <div class="flexCenter cubePop blocPop12">
                         <div class="imgPop1"></div>
                         <div class="cubeDetPop">
                             <h3>Hôtel Le soleil du matin</h3>
@@ -181,7 +198,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flexCenter cubePop">
+                    <div class="flexCenter cubePop blocPop12">
                         <div class="imgPop2"></div>
                         <div class="cubeDetPop">
                             <h3>Au cœur de l'eau</h3>
@@ -263,7 +280,7 @@
                     </div>
                 </div>
             </div> 
-            </div>      
+            </div>
       
         </section>
     </main> 
