@@ -3,6 +3,9 @@
     font-family: Raleway;
 }
 
+a
+{text-decoration: none;}
+
 /* Mise en forme */
 
 header {
@@ -292,6 +295,11 @@ footer
     border-radius: 25px;
     margin-right: 5px;
 }
+/* Acommodation Color Link */
+
+#accommodation a{ 
+    color: black;
+}
 
 /* Hebergement */
 
@@ -313,6 +321,7 @@ footer
 {
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 .cubeHeb
@@ -322,13 +331,20 @@ footer
     background-color: white;
     padding: 1%;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #f2f2f2;
+    box-shadow: 5px 5px 5px 1px  #f2f2f2;
+
 }
 
 .cubeHeb:hover
 {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.aHeb:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .cubeTextHeb
@@ -528,6 +544,9 @@ footer
      
 }
 
+#activities a
+{color: black;}
+
 .imgAct1
 {
 
@@ -595,12 +614,12 @@ footer
 .footer
 {
     height: 350px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .sizeBlocFoot
 {
-    height: 180px;
+    height: 150px;
 }
 .margBlocFoot
 { margin-right: 30%;}
@@ -634,6 +653,12 @@ footer a{
             padding: 20px;
         }
     
+}
+
+@media screen and (max-width :1024px)
+{
+    .sizeLink12
+    {margin-left: 45%;}
 }
 
 @media screen and (max-width: 990px) {
@@ -672,6 +697,7 @@ footer a{
         margin-top: 50px;
         padding: 5%;    
     }
+    
 }
 
 @media screen and (max-width: 770px) {
@@ -716,6 +742,8 @@ footer a{
     {
         flex-direction: column;
         height: auto;
+        padding-left: 5%;
+        width: 90%;
     }
     .cubeActivities
     {
@@ -742,11 +770,21 @@ footer a{
         height: auto;
         padding-left: 20px;
     }
+    .mPara
+    {
+        padding-left: 5%;
+    }
 }
 
 @media screen and (max-width: 600px)
 {
     
+    html,body
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .sizeLien
 
     {
@@ -784,6 +822,11 @@ footer a{
     .mTitleH1
     {
         font-size: x-large;
+        padding-left: 5%;
+    }
+    .mPara
+    {
+        padding-left: 5%;
     }
     .search
     {
@@ -813,5 +856,30 @@ footer a{
         display: none;
     }
     
+    .margFiltre{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .mEco
+    {
+        margin-right: 5px;
+    }
+
+    .mFam
+    {
+        margin-right: 0px;
+    }
+    .blocHeb
+    {
+        background-color: white;
+    }
+
+    .blocActivities
+    {
+        padding-left: 5%;
+        width: 90%;
+    }
 }
     
+ 
